@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Seth's Captcha</title>
+</head>
+<body>
+  <div class="login-form">
+    <div class="form-title">
+      Member Login
+    </div>
+    <div class="form-input">
+      <label for="username">Username</label>
+      <input type="text" id="username">
+    </div>
+    <div class="form-input">
+      <label for="password">Password</label>
+      <input type="password" id="password">
+    </div>
+    <div class="captcha">
+      <label for="captcha-input">Enter Captcha</label>
+      <div class="preview"></div>
+      <div class="captcha-form">
+        <input type="text" id="captcha-input" placeholder="Enter captcha-text">
+        <button class="captcha-refresh">
+          <i class="fa fa-refresh"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Move login button inside the login-form -->
+    <div class="form-input">
+      <button id="login-btn">Login</button>
+    </div>
+  </div>
+
+  <!-- Place script at the bottom -->
+  <script src="main.js"></script>
+</body>
+</html>
